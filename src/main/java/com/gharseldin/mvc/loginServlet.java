@@ -13,8 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 public class loginServlet extends HttpServlet{
 
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter writer = response.getWriter();
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
+		String name = request.getParameter("name");
+		request.setAttribute("name", name );
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);;
 	}
 	

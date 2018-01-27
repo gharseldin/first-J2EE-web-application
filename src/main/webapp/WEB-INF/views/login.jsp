@@ -11,5 +11,8 @@
 	<p>
 		This content represents my first jsp! should've done this a long time ago!
 	</p>
+	<p>
+		My name is coming from the request parameters as ${name}
+	</p>
 </body>
 </html>
