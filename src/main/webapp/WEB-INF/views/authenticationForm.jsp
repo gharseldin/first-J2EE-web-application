@@ -7,12 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome to the website
-<br/>
-If you came here through capture then here is your captured information = ${capture}
 
-<br/>
-
-If you came here through authentication then your user name is ${username} and password is ${password}
+<h2>Please enter credentials</h2>
+<h3><font color="red">${error}</font></h3>
+<form action="/authenticate" method="post">
+	User name: <input type="text" name="username"/>
+	<br/>
+	User password : <input type="password" name="password" />
+	<br/>
+	<input type="submit" value="login"/>
+</form>
 </body>
 </html>
