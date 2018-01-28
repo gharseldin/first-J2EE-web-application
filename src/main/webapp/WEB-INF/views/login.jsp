@@ -14,5 +14,11 @@
 	<p>
 		My name is coming from the request parameters as ${name}
 	</p>
+	<%
+	// This is a scriptlet
+	System.out.println("This is text from a scriptlet");
+	
+	%>
+	This is the password ${password}
 </body>
 </html>
