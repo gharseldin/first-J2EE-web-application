@@ -1,5 +1,8 @@
-package com.gharseldin.mvc;
+package com.gharseldin.services;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class authenticationService {
 
 	public boolean isUserValid(String username, String password) {
