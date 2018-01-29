@@ -10,7 +10,7 @@
 
 <h2>Please enter credentials</h2>
 <h3><font color="red">${error}</font></h3>
-<form action="/authenticate" method="post">
+<form action="/spring-mvc/auth" method="post">
 	User name: <input type="text" name="username"/>
 	<br/>
 	User password : <input type="password" name="password" />
